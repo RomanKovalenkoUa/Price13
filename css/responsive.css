@@ -1,0 +1,184 @@
+@media all and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 830px) {
+
+.wrapper {
+	max-width: 830px;
+	padding: 0 5px;
+}
+	.header, .content, .footer, .foot-nav {
+	width: 100%;
+}
+.slider-bg {
+	width: 100%;
+}
+.search-header {
+	float: left;
+	margin-left: 10%;
+}
+
+.sidebar-left {
+display: none;
+}
+
+.aside {
+	display: none;
+}
+main {
+	width: 100%;
+}
+.header-nav {
+	float: right;
+}
+.header-nav .humb {
+	height: 40px;
+	width: 40px;
+	border-bottom: 4px solid #b7b3b3;
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	right: 20px;
+	top:25px;
+
+}
+.header .humb::before, .header .humb::after {
+	height: 4px;
+	width: 40px;
+	content: "";
+	display: block;
+	background:#b7b3b3;
+	position: absolute;	
+	left: 0;
+	top: 0;
+}
+.header .humb::after {
+	top: 17px;
+}
+.header-nav ul {
+	position: fixed;
+	width:90vw;
+	/*background: rgba(0, 0, 0, 0.50);*/
+	top:0;
+	bottom:0;
+	left:calc(-2 * (100% - 34px - 10px));
+	box-shadow: 0 0 3px #ccc;
+	transition:left 1s;
+	z-index: 100;
+	font:bold 2.2rem/3rem 'Open Sans', sans-serif;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
+}
+.header-nav li a {
+	
+	line-height: 3;
+	text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.83);
+	border-top: 7px solid #03abe7;
+}
+.header-nav ul.active {
+    left: 0px;
+}
+
+.header-nav li {
+	display: block;
+}
+.item {
+	width: 100%;
+}
+.item::after {
+	background: none;
+}
+.footer .left {
+	width: 40%;
+}
+.footer .middle {
+	width: 20%;
+}
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+.wrapper {
+	max-width: 320px;
+	padding: 0 5px;
+}
+	.header, .content, .footer, .foot-nav {
+	width: 100%;
+}
+.header-hight {
+    padding: 25px 15px;
+}
+.slider-bg {
+	width: 100%;
+}
+.speach {
+	margin-top: 10px;
+}
+.search-header {
+	display: none;
+}
+.search {
+	width: 100px;
+}
+.header-nav .humb {
+	height: 32px;
+	width: 32px;
+	right: 20px;
+	top:25px;
+
+}
+.header .humb::before, .header .humb::after {
+	height: 4px;
+	width: 32px;
+	content: "";
+	left: 0;
+	top: 0;
+}
+.header .humb::after {
+	top: 14px;
+}
+.header-nav ul {
+	width: 80vw;
+	height: 100vh;
+	font:bold 1.0rem 'Open Sans', sans-serif;
+}
+
+/*.item {
+	width: 100%;
+}
+.item::after {
+	background: none;
+}*/
+main article .img-wrapper {
+	float: none;
+	margin-right: 0;
+	text-align: center;
+}
+.cnt {
+	text-align: center;
+}
+.paginator {
+	padding: 0 5px;
+}
+.footer .left {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.footer .middle {
+	width: 34%;
+}
+.footer .right {
+	width: 54%;
+}
+.footer {
+	margin-bottom: 30px;
+	padding: 0 5px;
+}
+.footer-col {
+	margin-right: 0;
+}
+}
